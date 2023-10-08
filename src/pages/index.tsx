@@ -47,7 +47,7 @@ export const getServerSideProps = async (ctx: GetServerSidePropsContext) => {
 
   return {
     props: {
-      loggedUser: JSON.stringify(session?.user),
+      loggedUser: JSON.stringify(session?.user) || JSON.stringify(null),
     },
   };
 };
