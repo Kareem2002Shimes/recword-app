@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .container {
+    @apply mx-auto px-[15px];
+  }
+  .element-center {
+    @apply flex items-center justify-center;
+  }
+  .section-gap {
+    @apply mb-[75px] md:mb-[150px];
+  }
+
+  .custom-label-filed {
+    @apply mb-3 block font-medium capitalize text-slate-900 dark:text-slate-200;
+  }
+  .custom-input-field {
+    @apply h-10 w-full rounded-md bg-white px-4 text-sm shadow-sm ring-1 ring-slate-900/10 transition-colors duration-200 hover:ring-slate-300 dark:bg-slate-800 dark:text-slate-300 dark:hover:ring-slate-700;
+  }
+  .submit-btn {
+    @apply element-center mt-6  h-10 w-full rounded-md bg-sky-500 text-base font-medium capitalize text-white transition-colors duration-200 hover:bg-sky-400;
+  }
+}
+
+input,
+button {
+  outline: none;
+}
